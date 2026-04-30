@@ -42,19 +42,20 @@
         "postalCode": "24050",
         "addressCountry": "IT"
       },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday"
-        ],
-        "opens": "09:00",
-        "closes": "18:00"
-      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "09:00",
+          "closes": "18:30"
+        }
+      ],
       "sameAs": [
         "https://wa.me/393518148817"
       ]
@@ -221,7 +222,11 @@
                     <span class="material-symbols-outlined text-3xl">schedule</span>
                 </div>
                 <h3 class="font-h3 text-h3 text-secondary mb-xs">Orari di Apertura</h3>
-                <p class="font-body-md text-body-md text-on-surface-variant">Lun-Sab<br>09:00 - 18:00</p>
+                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Lun-Sab: 09:00 - 18:30<br>
+                    <span class="text-error font-bold">Mercoledì: Chiuso</span>
+                </p>
+                <p class="text-[10px] mt-2 text-secondary/60 italic leading-tight">Il mercoledì potrei impiegare un po' di più a leggere i messaggi.</p>
             </div>
             <!-- Card 3: Telefono -->
             <div class="bg-surface rounded-2xl border-2 border-secondary/10 p-md flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
