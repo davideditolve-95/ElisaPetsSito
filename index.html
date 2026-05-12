@@ -71,9 +71,11 @@
     }
     </script>
 
-    <link rel="icon" type="image/png" href="/assets/logo.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
     
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="ca1d9779-4b4e-4668-9a48-4e7733b3702e"></script>
@@ -83,7 +85,7 @@
     <nav class="bg-white/95 backdrop-blur-md fixed top-0 left-0 w-full z-50 border-b-2 border-secondary/20 shadow-[0_4px_0_0_rgba(62,39,35,0.05)]">
         <div class="flex justify-between items-center h-20 px-6 md:px-12 max-w-full">
             <a href="/" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
-                <img src="/assets/logo.png" alt="ElisaPets Logo" class="h-14 w-auto object-contain">
+                <img src="/assets/logo.webp" alt="ElisaPets Logo" width="56" height="56" class="h-14 w-auto object-contain">
                 <span class="text-2xl font-black text-secondary tracking-tight">ElisaPets</span>
             </a>
             <div class="hidden md:flex space-x-8">
@@ -112,6 +114,9 @@
         </div>
     </nav>
 
+    <!-- Main Content -->
+    <main>
+
     <!-- Hero Section -->
     <section class="pt-[120px] pb-lg px-margin max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-lg">
         <div class="flex-1 space-y-md">
@@ -129,7 +134,7 @@
         </div>
         <div class="flex-1 w-full relative">
             <div class="absolute inset-0 bg-primary-container rounded-full blur-3xl opacity-30 transform translate-x-4 translate-y-4"></div>
-            <img alt="Cane e gatto felici nel salone di toelettatura professionale ElisaPets a Spirano (Bergamo)" class="w-full h-auto object-cover rounded-full border-2 border-secondary relative z-10 aspect-square shadow-[0_8px_24px_rgba(77,54,44,0.08)]" src="/assets/hero.png"/>
+            <img alt="Cane e gatto felici nel salone di toelettatura professionale ElisaPets a Spirano (Bergamo)" width="800" height="800" class="w-full h-auto object-cover rounded-full border-2 border-secondary relative z-10 aspect-square shadow-[0_8px_24px_rgba(77,54,44,0.08)]" src="/assets/hero.webp"/>
         </div>
     </section>
 
@@ -194,7 +199,7 @@
         </div>
         <div class="flex-1 w-full">
             <div class="bg-primary-container/30 rounded-full p-4 border border-secondary border-dashed hover:scale-105 transition-all duration-300">
-                <img alt="Elisabetta, toelettatrice professionista di ElisaPets a Spirano (Bergamo), insieme al suo cane Arfus" class="w-full h-auto object-cover rounded-full aspect-square border border-secondary shadow-md" src="/assets/about.jpg"/>
+                <img alt="Elisabetta, toelettatrice professionista di ElisaPets a Spirano (Bergamo), insieme al suo cane Arfus" width="600" height="600" class="w-full h-auto object-cover rounded-full aspect-square border border-secondary shadow-md" src="/assets/about.webp"/>
             </div>
         </div>
     </section>
@@ -420,10 +425,12 @@
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
     <footer class="bg-surface-container w-full rounded-t-[48px] border-t-2 border-secondary/10 flex flex-col items-center text-center py-16 px-8 space-y-8 mt-lg">
         <div class="flex flex-col items-center gap-3 mb-4">
-            <img src="/assets/logo.png" alt="ElisaPets Logo" class="h-24 w-auto object-contain mix-blend-multiply">
+            <img src="/assets/logo.webp" alt="ElisaPets Logo" width="96" height="96" class="h-24 w-auto object-contain mix-blend-multiply">
             <span class="text-xl font-black text-secondary">ElisaPets</span>
         </div>
         <div class="flex flex-wrap justify-center gap-x-8 gap-y-4">
@@ -443,7 +450,7 @@
 
     <!-- Cookie Banner -->
     <div id="cookie-banner" class="fixed bottom-6 left-6 right-6 md:left-auto md:max-w-md bg-white border-2 border-secondary p-6 rounded-2xl shadow-2xl z-[100] transition-transform duration-500" style="display: none;">
-        <h3 class="font-h3 text-secondary text-lg mb-2">Biscottini... e Cookie! 🍪</h3>
+        <p class="font-h3 text-secondary text-lg mb-2 font-bold">Biscottini... e Cookie! 🍪</p>
         <p class="text-on-surface-variant text-sm mb-4">
             Utilizziamo i cookie per migliorare la tua esperienza e analizzare il traffico tramite Google Analytics. Proseguendo, accetti la nostra <a href="#" class="underline text-secondary font-bold">Cookie Policy</a>.
         </p>
